@@ -1,7 +1,7 @@
-# Ulefone Metal - CyanogenMod 13.0
+# Ulefone Metal - Unofficial CyanogenMod 13.0
 ==============
 
-This branch is device for building of the CyanogenMod 13.0.
+This branch is device for building of the Unofficial CyanogenMod 13.0.
 
 ---
 
