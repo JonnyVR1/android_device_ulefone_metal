@@ -7,7 +7,7 @@ This branch is device for building of the Unofficial CyanogenMod 13.0.
 
 # About Device
 
-![Ulefone Metal](http://ulefone.com/images/metal/buy/metal-buy.jpg)
+![Ulefone Metal](http://ulefone.com/images/metal/buy/metal-buy.jpg "Ulefone Metal")
 
 
 ### Specifications
