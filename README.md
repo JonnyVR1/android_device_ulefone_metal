@@ -64,9 +64,9 @@ Front Camera | 2MP ---> Int. 5 (OV)
 * Other other other other other
 
 ##to be checked
-LTE
-Fingerprint
-OTG
+* LTE
+* Fingerprint
+* OTG
 
 ##To improve
 * LCD density ----> OK
