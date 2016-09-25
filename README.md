@@ -36,7 +36,6 @@ Front Camera | 2MP ---> Int. 5 (OV)
 * FM Radio with Speaker ok
 * FM Radio record ok
 * Hardware Key ok
-* Home key ---> No
 * Light ok
 * MicroSD ok
 * Vibration ok
@@ -60,7 +59,6 @@ Front Camera | 2MP ---> Int. 5 (OV)
 ##Broken/Bugs
 * Videocamera ---> Crash after 2 sec.
 * Leds
-* Home key
 * Other other other other other
 
 ##to be checked
