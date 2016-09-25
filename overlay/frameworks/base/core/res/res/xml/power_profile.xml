@@ -61,8 +61,6 @@
       <value>1144000</value> <!-- 1144 MHz CPU speed -->
       <value>1196000</value> <!-- 1196 MHz CPU speed -->
       <value>1573000</value> <!-- 1573 MHz CPU speed -->
-      <value>1755000</value> <!-- 1755 MHz CPU speed -->
-      <value>1950000</value> <!-- 1950 MHz CPU speed -->
   </array>
   <!-- Current when CPU is idle -->
   <item name="cpu.idle">6</item>
@@ -87,7 +85,7 @@
       <value>313.6</value> <!-- ~440mA -->
   </array>
   <!-- This is the battery capacity in mAh (measured at nominal voltage) -->
-  <item name="battery.capacity">3000</item>
+  <item name="battery.capacity">3050</item>
 
   <array name="wifi.batchedscan"> <!-- mA -->
       <value>.0002</value> <!-- 1-8/hr -->
