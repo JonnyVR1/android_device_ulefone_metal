@@ -1,13 +1,13 @@
 [
   {
     "remote": "github",
-    "repository": "Lucky76/android_vendor_ulefone_metal",
+    "repository": "JonnyXDA/android_vendor_ulefone_metal",
     "target_path": "vendor/ulefone/metal",
     "branch": "master"
   },
   {
     "remote": "github",
-    "repository": "Lucky76/android_kernel_ulefone_metal",
+    "repository": "JonnyXDA/android_kernel_ulefone_metal",
     "target_path": "kernel/ulefone/metal",
     "branch": "master"
   }
