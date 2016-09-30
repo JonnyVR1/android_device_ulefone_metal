@@ -1,10 +1,11 @@
-# from device/maisui/wtk6753_65u_m0/system.prop ---> Metal
+#
+# from device/maisui/wtk6753_65u_m0/system.prop
 #
 #
 # system.prop for generic sdk
 #
 
-rild.libpath=mtk-ril.so
+rild.libpath=/system/lib64/mtk-ril.so
 rild.libargs=-d /dev/ttyC0
 
 
@@ -55,7 +56,7 @@ ro.audio.silent=0
 ro.zygote.preload.enable=0
 
 # temporary enables NAV bar (soft keys)
-# qemu.hw.mainkeys=0
+qemu.hw.mainkeys=0
 
 ro.kernel.zio=38,108,105,16
 #ro.kernel.qemu=1
@@ -219,11 +220,3 @@ dalvik.vm.isa.arm.features=default
 ro.lovelyfonts_support=1
 net.bt.name=Android
 dalvik.vm.stack-trace-file=/data/anr/traces.txt
-
-# Hardware Info
-ro.device.chipset= MediaTek MT6753
-ro.device.cpu= Octa-core 1.3 GHz
-ro.device.gpu=ARM Mali-T720
-ro.device.rear_cam=13 MP
-ro.device.front_cam=8 MP
-ro.device.screen_res=720X1280
