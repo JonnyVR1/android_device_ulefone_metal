@@ -1,3 +1,0 @@
-
-#For Goodix fingerprint
-type gx_fpd_device, dev_type;
