@@ -21,61 +21,50 @@ Shipped Android Version | 6.0.1
 Storage | 16GB
 Battery | 3050 mAh
 Display | 5.0" 1280 x 720 px DPI 480
-Rear Camera | 8MP ---> Int.13MP (Sony IMX149 Exmor RS)
-Front Camera | 2MP ---> Int. 5 (OV)
+Rear Camera | 8MP/Int.13MP (Sony IMX149 Exmor RS)
+Front Camera | 2MP/Int. 5MP (OV)
 
 ---
 
 # Build Information
 
-### Working:
-##Ok
+## Working:
 * Booting.....
-* USB ok
-* WiFi ok
-* Touch ok
-* FM Radio ok
-* FM Radio with Speaker ok
-* FM Radio record ok
-* Hardware Key ok
-* Light ok
-* MicroSD ok
-* Vibration ok
-* Rotation ok
-* Camera Front ----> up to 5 mpx ok
-* Camera Rear ---> up to 13 mpx ok
-* HDR Foto ok
-* Flash Camera ok
-* Panorama ok
-* Sim1/2 Pin ok
-* MicroSim 1 ok
-* NanoSim 2 ok
-* Bluetooth ok
-* Sensor ok
-* Gyro ok
-* Audio Speaker ok
-* Headphones ok
-* AudioFx ok
+* USB
+* WiFi
+* Touch
+* Torch
+* FM Radio
+* FM Radio with Speaker
+* FM Radio record
+* Hardware Key
+* Light
+* MicroSD
+* Vibration
+* Rotation
+* Panorama
+* Bluetooth
+* Sensor
+* Gyro
+* Audio Speaker
+* Headphones
+* AudioFx
+* Fingerprint
 
 
-##Broken/Bugs
-* Videocamera ---> Crash after 2 sec.
-* Leds
+## Broken/Bugs
+* Camera
+* RIL
 * Other other other other other
 
-##to be checked
-* LTE
-* Fingerprint
+## To be checked
 * OTG
-
-##To improve
-* LCD density ----> OK
 
 
 
 ### Thanks to:
  * CyanogenMod team
- * Deepflex ---> Big Thanks for his reposity p9000 cm13
+ * Deepflex
  * Wuxianlin
  * Ferhung
  * Xen0n
@@ -85,3 +74,4 @@ Front Camera | 2MP ---> Int. 5 (OV)
  * Visi0nary
  * andyrichardson
  * Team M.A.D
+ * Lucky76
