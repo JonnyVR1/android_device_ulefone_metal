@@ -55,18 +55,13 @@ ro.audio.silent=0
 
 ro.zygote.preload.enable=0
 
-# temporary enables NAV bar (soft keys)
-qemu.hw.mainkeys=0
+# Disable Navigation Bar
+qemu.hw.mainkeys=1
 
 ro.kernel.zio=38,108,105,16
-#ro.kernel.qemu=1
-#ro.kernel.qemu.gles=0
-#ro.boot.selinux=disable
 
 # Disable dirty region for Mali
 debug.hwui.render_dirty_regions=false
-
-#ro.sf.lcd_density=480
 
 # performance
 ro.mtk_perf_simple_start_win=1
