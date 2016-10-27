@@ -19,7 +19,6 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
 
-
 # Architecture Extensions
 TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_NEON := true

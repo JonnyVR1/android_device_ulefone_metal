@@ -45,6 +45,7 @@
       <value>10</value> <!-- ~2mA -->
       <value>5</value> <!-- ~1mA -->
   </array>
+
   <!-- Different CPU speeds as reported in
        /sys/devices/system/cpu/cpufreq/all_time_in_state -->
   <array name="cpu.speeds">
@@ -62,10 +63,13 @@
       <value>1196000</value> <!-- 1196 MHz CPU speed -->
       <value>1573000</value> <!-- 1573 MHz CPU speed -->
   </array>
+
   <!-- Current when CPU is idle -->
   <item name="cpu.idle">6</item>
+
   <!-- Current when CPU is awake -->
   <item name="cpu.awake">34</item>
+
   <!-- Current at each CPU speed, as per 'cpu.speeds' -->
   <array name="cpu.active">
       <value>50.3</value> <!-- ~70mA -->
@@ -84,6 +88,7 @@
       <value>286.9</value> <!-- ~380mA -->
       <value>313.6</value> <!-- ~440mA -->
   </array>
+
   <!-- This is the battery capacity in mAh (measured at nominal voltage) -->
   <item name="battery.capacity">3050</item>
 
