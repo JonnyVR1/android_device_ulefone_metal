@@ -192,3 +192,6 @@ type teei_config_device, dev_type;
 type teei_vfs_device, dev_type;
 type teei_rpmb_device, dev_type;
 type tfa9890_device, dev_type;
+
+# Fingerprint device
+type esfp0_device, dev_type, mlstrustedobject;
