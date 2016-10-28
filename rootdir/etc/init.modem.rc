@@ -3,14 +3,26 @@
 # IMPORTANT: Do not create world writable files or directories.
 # This is a common source of Android security bugs.
 #
-   
+
+on early-init
+    write /sys/class/net/ccmni0/queues/rx-0/rps_cpus "ff"
+    write /sys/class/net/ccmni1/queues/rx-0/rps_cpus "ff"
+    write /sys/class/net/ccmni2/queues/rx-0/rps_cpus "ff"
+    write /sys/class/net/ccmni0/queues/rx-0/rps_flow_cnt "1000"
+    write /sys/class/net/ccmni1/queues/rx-0/rps_flow_cnt "1000"
+    write /sys/class/net/ccmni2/queues/rx-0/rps_flow_cnt "1000"
+    setprop net.perf.rps ff
+    setprop net.perf.cpu.core 4,4,0,0
+    setprop net.perf.cpu.freq 1144000,1144000,0,0
+
 on post-fs-data
 
     write /proc/bootprof "post-fs-data: on modem start"
 
     # Modem related device nodes
     mkdir /data/nvram/md  0770 root system
-
+    mkdir /data/nvram/md3  0770 root system
+    mkdir /data/md3	0770 root system
 #  Build-in Modified - S
 #    insmod /system/lib/modules/ccci_plat.ko
 #    insmod /system/lib/modules/ccci.ko
@@ -64,6 +76,7 @@ service ril-daemon-mtk /system/bin/mtkrild
     socket rild-mal stream 660 radio system
     socket rild-mal-at stream 660 radio system
     socket rild-vsim stream 660 root radio
+    socket rild-mbim stream 660 root radio
     socket sap_uim_socket1 stream 660 bluetooth bluetooth
     socket sap_uim_socket2 stream 660 bluetooth bluetooth
     socket sap_uim_socket3 stream 660 bluetooth bluetooth
@@ -83,6 +96,7 @@ service ril-daemon-mtkmd2 /system/bin/mtkrildmd2
     socket rild-mtk-ut-2-md2 stream 660 radio net_bt
     socket rild-mtk-modem-md2 stream 660 radio system
     socket rild-atci-md2 stream 660 root radio
+    socket rild-mbim-md2 stream 660 root radio
     socket rild-vsim-md2 stream 660 root radio
     socket rild-mal-md2 stream 660 radio system
     socket rild-mal-at-md2 stream 660 radio system
@@ -93,6 +107,22 @@ service ril-daemon-mtkmd2 /system/bin/mtkrildmd2
 
 service md_minilog_util /system/bin/md_minilog_util
     user radio
+    disabled
+    oneshot
+
+# VIA RILD service
+service viarild /system/bin/viarild -l /system/lib/libviatelecom-withuim-ril.so -- -d /dev/ttySDIO4
+    class core
+    socket rild-via stream 660 radio radio
+    socket msap_c2k_socket1 stream 660 radio radio
+    socket msap_c2k_socket2 stream 660 radio radio
+    socket msap_c2k_socket3 stream 660 radio radio
+    socket msap_c2k_socket4 stream 660 radio radio
+    socket rpc stream 660 radio system
+    socket rild-debug stream 660 radio system
+    socket rild-ctclient stream 660 radio system
+    socket rild-atci-c2k stream 660 radio system
+    group radio cache inet misc audio sdcard_r sdcard_rw log system
     disabled
     oneshot
 
@@ -113,6 +143,18 @@ service ccci_fsd /system/bin/ccci_fsd 0
     oneshot
 
 service ccci_mdinit /system/bin/ccci_mdinit 0
+    user system
+    group radio system
+    class core
+    oneshot
+
+service ccci3_fsd /system/bin/ccci_fsd 2
+    user radio
+    group  radio system
+    class core
+    oneshot
+
+service ccci3_mdinit /system/bin/ccci_mdinit 2
     user system
     group radio system
     class core
