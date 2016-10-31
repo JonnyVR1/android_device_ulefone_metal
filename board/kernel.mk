@@ -12,7 +12,6 @@ BOARD_MKBOOTIMG_ARGS := --cmdline $(BOARD_KERNEL_CMDLINE) --board $(BOARD_NAME) 
 MTK_APPENDED_DTB_SUPPORT := yes
 TARGET_IS_64_BIT := true
 MTK_K64_SUPPORT := yes
-MTK_K64_SUPPORT := true
 
 # Kernel properties
 TARGET_KERNEL_SOURCE := kernel/ulefone/metal
