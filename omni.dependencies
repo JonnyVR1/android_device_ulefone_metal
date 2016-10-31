@@ -3,12 +3,12 @@
     "remote": "github",
     "repository": "JonnyXDA/android_vendor_ulefone_metal",
     "target_path": "vendor/ulefone/metal",
-    "branch": "master"
+    "revision": "master"
   },
   {
     "remote": "github",
     "repository": "JonnyXDA/android_kernel_ulefone_metal",
     "target_path": "kernel/ulefone/metal",
-    "branch": "master"
+    "revision": "master"
   }
-] 
+]

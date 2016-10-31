@@ -14,11 +14,8 @@
 # limitations under the License.
 #
 
-# Enhanced NFC
-#$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
-
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common Omni stuff.
+$(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, $(LOCAL_PATH)/device_metal.mk)
@@ -32,5 +29,13 @@ PRODUCT_BRAND := Ulefone
 PRODUCT_DEVICE := metal
 PRODUCT_MANUFACTURER := Ulefone
 PRODUCT_MODEL := Metal
-PRODUCT_NAME := cm_metal
+PRODUCT_NAME := omni_metal
 PRODUCT_RELEASE_NAME := metal
+
+# TWRP.fstab
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/twrp.fstab:recovery/root/etc/recovery.fstab
+
+# Time Zone data for Recovery
+PRODUCT_COPY_FILES += \
+    bionic/libc/zoneinfo/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
