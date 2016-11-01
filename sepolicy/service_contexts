@@ -49,5 +49,3 @@ mw_blacklist   u:object_r:mtk_mwblacklist_service:s0
 
 # Fingerprint device
 egistec.ets.service.daemon u:object_r:etsd_service:s0
-
-

@@ -4,10 +4,23 @@ Date: Mon, 5 Sep 2016 12:33:47 +0300
 Subject: [PATCH] mtk core
 
 Change-Id: Id64e2366ae957aa3032b5f8e160c2089ae13db5e
----
- init/init.cpp | 4 +++-
- 1 file changed, 3 insertions(+), 1 deletion(-)
 
+diff --git a/healthd/BatteryMonitor.cpp b/healthd/BatteryMonitor.cpp
+index 86a4fc6..584a466 100644
+--- a/healthd/BatteryMonitor.cpp
++++ b/healthd/BatteryMonitor.cpp
+@@ -207,7 +207,11 @@ bool BatteryMonitor::update(void) {
+     props.batteryLevel = mBatteryFixedCapacity ?
+         mBatteryFixedCapacity :
+         getIntField(mHealthdConfig->batteryCapacityPath);
++#ifndef MTK_HARDWARE
+     props.batteryVoltage = getIntField(mHealthdConfig->batteryVoltagePath) / 1000;
++#else
++    props.batteryVoltage = getIntField(mHealthdConfig->batteryVoltagePath);
++#endif
+ 
+     props.batteryTemperature = mBatteryFixedTemperature ?
+         mBatteryFixedTemperature :
 diff --git a/init/init.cpp b/init/init.cpp
 index 58d7d34..450fec2 100644
 --- a/init/init.cpp

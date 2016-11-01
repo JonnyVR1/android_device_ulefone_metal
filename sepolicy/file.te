@@ -221,5 +221,3 @@ type sysfs_fingerprintd, fs_type, sysfs_type;
 type sysfs_etsd, fs_type, sysfs_type;
 
 type etsd_data_file, file_type, data_file_type;
-
-
