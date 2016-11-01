@@ -1,14 +1,7 @@
-#
-# from device/maisui/wtk6753_65u_m0/system.prop
-#
-#
-# system.prop for generic sdk
-#
-
 rild.libpath=/system/lib64/mtk-ril.so
 rild.libargs=-d /dev/ttyC0
 
-ro.telephony.ril_class=MT6753
+ro.telephony.ril_class=MediaTekRIL
 ro.telephony.ril.config=fakeiccid
 persist.call_recording.enabled=true
 persist.call_recording.src=1
