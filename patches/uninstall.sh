@@ -2,7 +2,7 @@ echo $1
 rootdirectory="$PWD"
 # ---------------------------------
 
-dirs="frameworks/av system/core"
+dirs="frameworks/av frameworks/opt/telephony system/core"
 
 for dir in $dirs ; do
 	cd $rootdirectory
