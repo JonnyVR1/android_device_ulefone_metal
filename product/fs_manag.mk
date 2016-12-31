@@ -6,4 +6,10 @@ PRODUCT_PACKAGES += \
     mkfs.f2fs \
     make_ext4fs \
     resize2fs \
-    setup_fs
+    setup_fs \
+    mount.exfat \
+    fsck.exfat \
+    mkfs.exfat \
+    fsck.ntfs \
+    mkfs.ntfs \
+    mount.ntfs

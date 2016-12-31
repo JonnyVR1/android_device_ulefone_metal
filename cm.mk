@@ -14,9 +14,6 @@
 # limitations under the License.
 #
 
-# Enhanced NFC
-#$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
-
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
@@ -34,3 +31,4 @@ PRODUCT_MANUFACTURER := Ulefone
 PRODUCT_MODEL := Metal
 PRODUCT_NAME := cm_metal
 PRODUCT_RELEASE_NAME := metal
+PRODUCT_RESTRICT_VENDOR_FILES := false

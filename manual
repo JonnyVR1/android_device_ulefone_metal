@@ -1,21 +1,26 @@
 How to make a patches after changes in CM source code:
 
-Cd Working_dir (For example: Cd cm13/frameworks/base)
+Cd working_dir (For example: cd cm/frameworks/base)
 git status
 git add .
 git commit -m "name of patch"
 git show HEAD > 0001_.patch
 
-How to launch the CM13 build:
-Download vendor and device from my git.
+How to launch the CM 14.1 build:
+
+Download vendor and device from my GitHub.
 Create dirs ulefone/metal and place them in working_dir/device and in working_dir/vendor
 After copy files from downloaded device in working_dir/device , and from downloaded vendor in working_dir/vendor
 Open terminal and write:
-cd Working_dir
-After apply patches:
-sh device/ulefone/metal/patches/install.sh
-Write
-. build/envsetup.sh && breakfast metal
-And
-brunch metal
-Wait of finish, for me ~50mins
+
+cd working_dir
+
+export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4g"
+
+./device/ulefone/metal/patches/install.sh
+
+. build/envsetup.sh
+
+lunch cm_metal-userdebug && make bacon -j10
+
+Wait for the build to finish, for me ~5hr
