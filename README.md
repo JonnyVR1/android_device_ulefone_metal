@@ -28,40 +28,38 @@ Front Camera | 2MP, Int. 5MP (OV)
 
 # Build Information
 
-### In progress(only for CM 14.1):
+### Working
  * Hardware acceleration
  * Wi-Fi
- * Offline charging
- * GPS
- * AGPS
  * Vibration
  * Audio
- * Auto brightness
- * Doze
- * RAM and ROM
- * Rotation
- * All sensors
- * NFC (payments, pairing .etc)
- * Lazer autofocus
  * Flashlight (statusbar and camera)
  * Bluetooth
- * Camera rear/front (video and photo)
  * Micro SD support
  * MTP and Mass Storage modes
- * Audio over Bluetooth (music, calls .etc)
  * Fingerprint scanner
+ * RAM and ROM
+ * Rotation
+ * Camera rear/front (photographs only)
  * Wi-Fi tethering
- * HOME Button like in stock
- * Special button new functional
-
+ * GPS
+ * All sensors
+ * Fingerprint
+ * Doze
+ * Screenrecorder
 
 ## Broken/Bugs
-* Camera
-* RIL
-* Other other other other other
+ * Auto brightness
+ * Brighness bug
+ * Camera rear/front (video)
+ * RIL is intermittent
+ * Operator Name not shown
 
 ## To be checked
-* OTG
+ * Audio over Bluetooth (music, calls .etc)
+ * OTG
+ * Enforcing SELinux
+ * Offline charging
 
 
 
