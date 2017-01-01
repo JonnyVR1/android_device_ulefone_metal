@@ -53,6 +53,7 @@ Front Camera | 2MP, Int. 5MP (OV)
 
 ## Broken/Bugs
  * Camera rear/front (video)
+ * Video playing
  * Auto brightness
  * Adjustable brightness
 
