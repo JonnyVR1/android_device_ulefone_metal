@@ -48,11 +48,11 @@ Front Camera | 2MP, Int. 5MP (OV)
  * Doze
  * Screenrecorder
  * Offline charging
+ * RIL
+ * Operator name
 
 ## Broken/Bugs
  * Camera rear/front (video)
- * RIL is intermittent
- * Operator Name not shown
  * Auto brightness
  * Adjustable brightness
 
