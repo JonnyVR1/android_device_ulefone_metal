@@ -46,7 +46,7 @@ index 54e05f7..dc97fb2 100644
 +                recordSize[1] = ((data[RESPONSE_DATA_FILE_SIZE_1] & 0xff) << 8)
 +                       + (data[RESPONSE_DATA_FILE_SIZE_2] & 0xff);
 +                recordSize[2] = recordSize[1] / recordSize[0];
-+                
++
 +
                  sendResult(response, recordSize, null);
                  break;
@@ -91,7 +91,7 @@ index 54e05f7..dc97fb2 100644
 -                    lc.mCountRecords = size / lc.mRecordSize;
 -                }
 +                lc.mCountRecords = size / lc.mRecordSize;
-+                
++
  
                   if (lc.mLoadAll) {
                       lc.results = new ArrayList<byte[]>(lc.mCountRecords);
@@ -109,7 +109,7 @@ index 54e05f7..dc97fb2 100644
 -                    size = tlvData.mFileSize;
 -                } else {
 -                    if (TYPE_EF != data[RESPONSE_DATA_FILE_TYPE]) {
-+              
++
 +                if (TYPE_EF != data[RESPONSE_DATA_FILE_TYPE]) {
                          throw new IccFileTypeMismatch();
 -                    }
