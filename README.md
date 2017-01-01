@@ -47,19 +47,19 @@ Front Camera | 2MP, Int. 5MP (OV)
  * Fingerprint
  * Doze
  * Screenrecorder
+ * Offline charging
 
 ## Broken/Bugs
- * Auto brightness
- * Brighness bug
  * Camera rear/front (video)
  * RIL is intermittent
  * Operator Name not shown
+ * Auto brightness
+ * Adjustable brightness
 
 ## To be checked
  * Audio over Bluetooth (music, calls .etc)
  * OTG
  * Enforcing SELinux
- * Offline charging
 
 
 
