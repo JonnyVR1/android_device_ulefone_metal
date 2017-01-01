@@ -3,12 +3,12 @@
     "remote": "github",
     "repository": "JonnyXDA/android_vendor_ulefone_metal",
     "target_path": "vendor/ulefone/metal",
-    "branch": "cm-14.1"
+    "branch": "LineageOS-14.1"
   },
   {
     "remote": "github",
     "repository": "JonnyXDA/android_kernel_ulefone_metal",
     "target_path": "kernel/ulefone/metal",
-    "branch": "cm-14.1"
+    "branch": "LineageOS-14.1"
   }
 ] 

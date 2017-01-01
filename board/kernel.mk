@@ -13,6 +13,6 @@ MTK_K64_SUPPORT := yes
 
 # Kernel properties
 TARGET_KERNEL_SOURCE := kernel/ulefone/metal
-TARGET_KERNEL_CONFIG := cm_metal_defconfig
+TARGET_KERNEL_CONFIG := lineage_metal_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 MTK_APPENDED_DTB_SUPPORT := yes

@@ -1,12 +1,12 @@
-How to make a patches after changes in CM source code:
+How to make a patches after changes in LineageOS source code:
 
-Cd working_dir (For example: cd cm/frameworks/base)
+Cd working_dir (For example: cd lineage/frameworks/base)
 git status
 git add .
 git commit -m "name of patch"
 git show HEAD > 0001_.patch
 
-How to launch the CM 14.1 build:
+How to launch the LineageOS 14.1 build:
 
 Download vendor and device from my GitHub.
 Create dirs ulefone/metal and place them in working_dir/device and in working_dir/vendor
@@ -21,6 +21,6 @@ export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -X
 
 . build/envsetup.sh
 
-lunch cm_metal-userdebug && make bacon -j10
+lunch lineage_metal-userdebug && make bacon -j10
 
 Wait for the build to finish, for me ~5hr
