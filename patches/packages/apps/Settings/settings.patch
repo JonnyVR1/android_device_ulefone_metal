@@ -68,7 +68,7 @@ index cba4865..c7f5fa3 100644
          findPreference(KEY_MOD_API_LEVEL).setEnabled(true);
  
 +	String author_info = getResources().getString(R.string.author_info_default);
-+	setStringSummary(KEY_AUTHOR_INFO, author_info);	
++	setStringSummary(KEY_AUTHOR_INFO, author_info);
 +
          if (!SELinux.isSELinuxEnabled()) {
              String status = getResources().getString(R.string.selinux_status_disabled);

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <device name="Android">
     <item name="none">0</item>
-    <item name="screen.on">200</item>
+    <item name="screen.on">150</item>
     <item name="screen.full">300</item>
     <item name="bluetooth.active">104</item>
     <item name="bluetooth.on">4</item>
