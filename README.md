@@ -77,3 +77,4 @@ Front Camera | 2MP, Int. 5MP (OV)
  * andyrichardson
  * Team M.A.D
  * Lucky76
+ * DeckerSU
