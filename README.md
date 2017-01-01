@@ -50,11 +50,11 @@ Front Camera | 2MP, Int. 5MP (OV)
  * Offline charging
  * RIL
  * Operator name
- * Auto brightness
- * Adjustable brightness
 
 ## Broken/Bugs
  * Camera rear/front (video)
+ * Auto brightness
+ * Adjustable brightness
 
 ## To be checked
  * Audio over Bluetooth (music, calls .etc)
