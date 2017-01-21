@@ -29,10 +29,13 @@ Front Camera | 2MP, Int. 5MP (OV)
 # Build Information
 
 ### Working
+ * Auto brightness
+ * Adjustable brightness
  * Hardware acceleration
  * Wi-Fi
  * Vibration
  * Audio
+ * Video playback
  * Flashlight (statusbar and camera)
  * Bluetooth
  * Micro SD support
@@ -53,9 +56,6 @@ Front Camera | 2MP, Int. 5MP (OV)
 
 ## Broken/Bugs
  * Camera rear/front (video)
- * Video playing
- * Auto brightness
- * Adjustable brightness
 
 ## To be checked
  * Audio over Bluetooth (music, calls .etc)
@@ -79,3 +79,4 @@ Front Camera | 2MP, Int. 5MP (OV)
  * Team M.A.D
  * Lucky76
  * DeckerSU
+ * Daniel HK
