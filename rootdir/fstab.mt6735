@@ -12,7 +12,7 @@
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/frp        /persistent  emmc   defaults                                                   defaults
 
 /devices/mtk-msdc.0/11240000.msdc1*  auto      vfat      defaults        voldmanaged=sdcard1:auto,encryptable=userdata
-/devices/platform/mt_usb*            auto      vfat      defaults        voldmanaged=usb:auto
+/devices/platform/mt_usb*            auto      auto      defaults        voldmanaged=usbdisk:auto
 
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/nvram         /nvram          emmc  defaults defaults
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/proinfo       /proinfo        emmc  defaults defaults

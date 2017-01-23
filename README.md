@@ -29,37 +29,36 @@ Front Camera | 2MP, Int. 5MP (OV)
 # Build Information
 
 ### Working
- * Auto brightness
  * Adjustable brightness
- * Hardware acceleration
- * Wi-Fi
- * Vibration
+ * All sensors
  * Audio
- * Video playback
- * Flashlight (statusbar and camera)
+ * Audio over Bluetooth (music, calls .etc)
+ * Auto brightness
  * Bluetooth
+ * Camera rear/front (photographs only)
+ * Doze
+ * Flashlight (statusbar and camera)
+ * Fingerprint
+ * GPS
+ * Hardware acceleration
  * Micro SD support
  * MTP and Mass Storage modes
- * Fingerprint scanner
- * RAM and ROM
- * Rotation
- * Camera rear/front (photographs only)
- * Wi-Fi tethering
- * GPS
- * All sensors
- * Fingerprint
- * Doze
- * Screenrecorder
  * Offline charging
- * RIL
  * Operator name
+ * RAM and ROM
+ * RIL
+ * Rotation
+ * Screenrecorder
+ * USB OTG
+ * Vibration
+ * Video playback
+ * Wi-Fi
+ * Wi-Fi tethering
 
 ## Broken/Bugs
  * Camera rear/front (video)
 
 ## To be checked
- * Audio over Bluetooth (music, calls .etc)
- * OTG
  * Enforcing SELinux
 
 
@@ -80,3 +79,4 @@ Front Camera | 2MP, Int. 5MP (OV)
  * Lucky76
  * DeckerSU
  * Daniel HK
+ * MohanCM
