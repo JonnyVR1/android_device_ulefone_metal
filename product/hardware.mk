@@ -33,4 +33,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
    libmtk_symbols \
+   libccci_util \
+   libgralloc_extra \
    libstlport
