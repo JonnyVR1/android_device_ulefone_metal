@@ -89,4 +89,4 @@ allow nvram_daemon rootfs:dir { read open };
 allow nvram_daemon rootfs:file r_file_perms;
 allow nvram_daemon toolbox_exec:file { r_file_perms execute execute_no_trans };
 allow nvram_daemon rootfs:lnk_file { getattr };
-
+allow nvram_daemon block_device:blk_file { read write open };

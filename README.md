@@ -37,6 +37,7 @@ Front Camera | 2MP, Int. 5MP (OV)
  * Bluetooth
  * Camera rear/front (photographs only)
  * Doze
+ * Enforcing SELinux
  * Flashlight (statusbar and camera)
  * Fingerprint
  * GPS
@@ -57,9 +58,6 @@ Front Camera | 2MP, Int. 5MP (OV)
 
 ## Broken/Bugs
  * Camera rear/front (video)
-
-## To be checked
- * Enforcing SELinux
 
 
 

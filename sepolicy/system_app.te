@@ -219,3 +219,6 @@ allow system_app teei_client_device:chr_file r_file_perms;
 # Purpose: for et310 kernel uevent
 # Package: android.ui
 allow system_app self:netlink_kobject_uevent_socket { create ioctl read getattr setattr bind connect getopt setopt shutdown };
+
+# FM Radio
+allow system_app fm_device:chr_file rw_file_perms;
