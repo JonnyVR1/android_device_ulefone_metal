@@ -10,7 +10,7 @@ This branch is device for building of the LineageOS 14.1 and Android Nougat 7.1.
 ![Ulefone Metal](http://ulefone.com/images/metal/buy/metal-buy.jpg "Ulefone Metal")
 
 
-### Specifications
+## Specifications
 
 Component Type | Details
 -------:|:-------------------------
@@ -28,14 +28,15 @@ Front Camera | 2MP, Int. 5MP (OV)
 
 # Build Information
 
-### Working
+## Working
  * Adjustable brightness
  * All sensors
  * Audio
  * Audio over Bluetooth (music, calls .etc)
  * Auto brightness
  * Bluetooth
- * Camera rear/front (photographs only)
+ * Camera rear/front (Photographs)
+ * Camera rear/front (Video - [Use Camu from Play Store](https://play.google.com/store/apps/details?id=com.sumoing.camu))
  * Doze
  * Enforcing SELinux
  * Flashlight (statusbar and camera)
@@ -57,11 +58,11 @@ Front Camera | 2MP, Int. 5MP (OV)
  * Wi-Fi tethering
 
 ## Broken/Bugs
- * Camera rear/front (video)
+ * None?
 
 
 
-### Thanks to:
+# Thanks to:
  * LineageOS team
  * Deepflex
  * Wuxianlin
