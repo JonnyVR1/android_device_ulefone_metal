@@ -40,6 +40,9 @@ PRODUCT_PACKAGES += \
     libshim_agps \
     libshim_cam \
     libshim_asc \
+    libshim_audio \
+    libshim_audioCompat \
+    libshim_xlog \
     libshim_ui
 
 # Mediatek

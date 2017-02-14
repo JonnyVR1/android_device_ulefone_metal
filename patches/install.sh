@@ -2,7 +2,7 @@ echo $1
 rootdirectory="$PWD"
 # ---------------------------------
 
-dirs="packages/apps/Settings"
+dirs="packages/apps/Settings system/core"
 
 for dir in $dirs ; do
 	cd $rootdirectory
