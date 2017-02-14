@@ -43,16 +43,6 @@ LOCAL_MODULE := libshim_cam
 include $(BUILD_SHARED_LIBRARY)
 
 
-## libshim_xlog
-include $(CLEAR_VARS)
-
-LOCAL_SRC_FILES := mtk_xlog.cpp
-
-LOCAL_SHARED_LIBRARIES := libbinder libui
-LOCAL_MODULE := libshim_xlog
-include $(BUILD_SHARED_LIBRARY)
-
-
 ## libshim_audio
 include $(CLEAR_VARS)
 
@@ -70,4 +60,14 @@ LOCAL_SRC_FILES := mtk_audioCompat.c
 
 LOCAL_SHARED_LIBRARIES := libbinder libui
 LOCAL_MODULE := libshim_audioCompat
+include $(BUILD_SHARED_LIBRARY)
+
+
+## libshim_gui
+include $(CLEAR_VARS)
+
+LOCAL_SRC_FILES := mtk_gui.cpp
+
+LOCAL_SHARED_LIBRARIES := libbinder libui
+LOCAL_MODULE := libshim_gui
 include $(BUILD_SHARED_LIBRARY)

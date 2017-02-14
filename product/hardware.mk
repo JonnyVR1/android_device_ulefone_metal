@@ -38,14 +38,19 @@ PRODUCT_PACKAGES += \
 # Mtk symbols & shim
 PRODUCT_PACKAGES += \
     libshim_agps \
-    libshim_cam \
     libshim_asc \
     libshim_audio \
     libshim_audioCompat \
-    libshim_xlog \
+    libshim_cam \
+    libshim_gui \
     libshim_ui
 
 # Mediatek
 PRODUCT_PACKAGES += \
     libstlport \
     libgralloc_extra
+
+# MTK Logging functions
+PRODUCT_PACKAGES += \
+    libmlg \
+    liblog_mtk

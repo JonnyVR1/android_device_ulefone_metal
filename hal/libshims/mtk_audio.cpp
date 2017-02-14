@@ -1,64 +1,45 @@
-#include <system/audio.h>
-#include <media/IAudioFlinger.h>
-#include <hardware/audio.h>
-#include <stdlib.h>
-#include <dlfcn.h>
+#include <stdint.h>
 
-#ifndef __unused
-#define __unused  __attribute__((__unused__))
-#endif
+extern "C" {
+    bool _ZN7android11AudioSystem24getVoiceUnlockDLInstanceEv(){
+        return 0;
+    }
+    
+    int _ZN7android11AudioSystem23GetVoiceUnlockDLLatencyEv(){
+        return 0;
+    }
+ 
+    int _ZN7android11AudioSystem17SetVoiceUnlockSRCEjj(uint32_t outSR, uint32_t outChannel){
+        return 0;
+    }
 
-namespace android {
+    bool _ZN7android11AudioSystem18startVoiceUnlockDLEv(){
+        return 0;
+    }
+ 
+    int _ZN7android11AudioSystem15ReadRefFromRingEPvjS1_(void*buf, uint32_t datasz, void* DLtime){
+        return 0;
+    }
+    
+    int _ZN7android11AudioSystem20GetVoiceUnlockULTimeEPv(void* DLtime) {
+        return 0;
+    }
 
-class AudioSystem
-{
-public:
-    static bool getVoiceUnlockDLInstance();
-    static int GetVoiceUnlockDLLatency();
-    static int SetVoiceUnlockSRC(uint outSR, uint outChannel);
-    static bool stopVoiceUnlockDL();
-    static bool startVoiceUnlockDL();
-    static int ReadRefFromRing(void* buf, uint32_t datasz, void* DLtime);
-    static int GetVoiceUnlockULTime(void* DLtime);
-    static void freeVoiceUnlockDLInstance();
+    void _ZN7android11AudioSystem25freeVoiceUnlockDLInstanceEv(){}
 
-}; // class
-
-bool AudioSystem::getVoiceUnlockDLInstance()
-{
-  return false;
+    bool _ZN7android11AudioSystem17stopVoiceUnlockDLEv(){
+        return 0;
+    }
+    
+    int _ZN7android11AudioSystem12SetAudioDataEijPv(int par1,size_t byte_len,void *ptr) {
+        return 0;
+    }
+    
+    int _ZN7android11AudioSystem15SetAudioCommandEii(int var1,int var2) {
+        return 0;
+    }
+    
+    int _ZN7android11AudioSystem15GetAudioCommandEiPi(int var1) {
+        return 0;
+    }
 }
-
-int AudioSystem::GetVoiceUnlockDLLatency()
-{
-  return 0;
-}
-
-int AudioSystem::SetVoiceUnlockSRC(uint outSR __unused, uint outChannel __unused)
-{
-  return 0;
-}
-
-bool AudioSystem::stopVoiceUnlockDL()
-{
-  return false;
-}
-
-bool AudioSystem::startVoiceUnlockDL()
-{
-  return false;
-}
-
-int AudioSystem::ReadRefFromRing(void* buf __unused, uint32_t datasz __unused, void* DLtime __unused)
-{
-  return 0;
-}
-
-int AudioSystem::GetVoiceUnlockULTime(void* DLtime __unused)
-{
-  return 0;
-}
-
-void AudioSystem::freeVoiceUnlockDLInstance() {}
-
-} // namespace
