@@ -103,3 +103,4 @@ allow init debugfs:file { write };
 
 # LD_SHIM_LIBS
 allow init surfaceflinger:process noatsecure;
+allow init gpsd:process noatsecure;
