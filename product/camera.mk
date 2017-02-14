@@ -7,3 +7,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     Snap
+
+# Camera Legacy
+PRODUCT_PACKAGES += \
+    fs_config_files

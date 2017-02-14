@@ -48,7 +48,9 @@ PRODUCT_PACKAGES += \
 # Mediatek
 PRODUCT_PACKAGES += \
     libstlport \
-    libgralloc_extra
+    libgralloc_extra \
+    libgui_ext \
+    libui_ext
 
 # MTK Logging functions
 PRODUCT_PACKAGES += \

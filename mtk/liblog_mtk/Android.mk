@@ -14,8 +14,8 @@ include $(BUILD_SHARED_LIBRARY)
 include $(CLEAR_VARS)
 
 # Provide a hexeditable drop in for liblog for special executables
-# that are started with a clean environment, e.g. slim_daemon. These
-# executables will need to be hexedited.
+# that are started with a clean environment, These executables 
+# will need to be hexedited.
 
 LOCAL_SRC_FILES := \
     mtk_xlog.c
