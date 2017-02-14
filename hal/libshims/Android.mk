@@ -5,6 +5,7 @@ include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
     icu53.c \
+    icu55.c \
     ssl.c
 
 LOCAL_SHARED_LIBRARIES := liblog libicuuc libicui18n libcrypto
