@@ -33,6 +33,16 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
    libmtk_symbols \
-   libccci_util \
-   libgralloc_extra \
-   libstlport
+   libccci_util
+
+# Mtk symbols & shim
+PRODUCT_PACKAGES += \
+    libshim_agps \
+    libshim_cam \
+    libshim_asc \
+    libshim_ui
+
+# Mediatek
+PRODUCT_PACKAGES += \
+    libstlport \
+    libgralloc_extra

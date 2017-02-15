@@ -2,7 +2,7 @@ import init.mt6735.usb.rc
 import init.modem.rc
 
 on init
-    export LD_PRELOAD "libmtk_symbols.so"
+    export LD_SHIM_LIBS "/system/lib/libshowlogo.so|libshim_asc.so:/system/lib/libmtk_mmutils.so|libshim_asc.so:/system/lib64/libmtk_mmutils.so|libshim_ui.so:/system/lib64/libmtk_mmutils.so|libshim_ui.so:/system/lib64/hw/hwcomposer.mt6753.so|libshim_cam.so:/system/lib/hw/hwcomposer.mt6753.so|libshim_cam.so:/system/lib64/libcam.client.so|libshim_cam.so:/system/lib/libcam.client.so|libshim_cam.so:/system/lib/libMtkOmxVdec.so|libshim_cam.so"
 
     # mount points
     mkdir /protect_f 0771 system system
