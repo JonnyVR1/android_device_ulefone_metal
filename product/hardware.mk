@@ -37,7 +37,6 @@ PRODUCT_PACKAGES += \
 
 # Mtk symbols & shim
 PRODUCT_PACKAGES += \
-    libshim_agps \
     libshim_asc \
     libshim_audio \
     libshim_audioCompat \
