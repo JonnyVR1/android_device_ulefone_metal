@@ -12,6 +12,10 @@ for dir in $dirs ; do
 	echo " "
 done
 
+cd $rootdirectory
+cd packages/apps/SetupWizard
+git reset 3593f035fcb00ff88d422e6c7056100ac7a3deb3 --hard
+
 # -----------------------------------
 echo "Changing to build directory..."
 cd $rootdirectory
