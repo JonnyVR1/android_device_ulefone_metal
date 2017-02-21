@@ -60,3 +60,26 @@ LOCAL_SRC_FILES := mtk_audioCompat.c
 LOCAL_SHARED_LIBRARIES := libbinder libmedia
 LOCAL_MODULE := libshim_audioCompat
 include $(BUILD_SHARED_LIBRARY)
+
+
+## libshim_parcel
+include $(CLEAR_VARS)
+
+# only for 64bit libraries
+LOCAL_SRC_FILES_64 := mtk_parcel.cpp
+
+LOCAL_SHARED_LIBRARIES := libbinder
+LOCAL_MODULE := libshim_parcel
+LOCAL_MODULE_TAGS := optional
+
+include $(BUILD_SHARED_LIBRARY)
+
+
+## libshim_fence
+include $(CLEAR_VARS)
+
+LOCAL_SRC_FILES := mtk_fence.cpp
+
+LOCAL_SHARED_LIBRARIES := libbinder
+LOCAL_MODULE := libshim_fence
+include $(BUILD_SHARED_LIBRARY)

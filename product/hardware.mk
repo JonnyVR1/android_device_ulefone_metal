@@ -41,7 +41,9 @@ PRODUCT_PACKAGES += \
     libshim_audio \
     libshim_audioCompat \
     libshim_cam \
+    libshim_fence \
     libshim_gui \
+    libshim_parcel \
     libshim_ui
 
 # Mediatek
