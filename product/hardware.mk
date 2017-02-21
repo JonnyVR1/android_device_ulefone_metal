@@ -53,5 +53,4 @@ PRODUCT_PACKAGES += \
 
 # MTK Logging functions
 PRODUCT_PACKAGES += \
-    libmlg \
     liblog_mtk
