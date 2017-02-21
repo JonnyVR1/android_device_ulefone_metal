@@ -58,7 +58,7 @@ Front Camera | 2MP, Int. 5MP (OV)
  * Wi-Fi tethering
 
 ## Broken/Bugs
- * None?
+ * HDR
 
 
 
