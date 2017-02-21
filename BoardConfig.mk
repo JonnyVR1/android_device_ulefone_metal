@@ -45,6 +45,3 @@ EXTENDED_FONT_FOOTPRINT := true
 
 # System.prop
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
-
-# Include
-TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
