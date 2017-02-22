@@ -2,7 +2,7 @@ echo $1
 rootdirectory="$PWD"
 # ---------------------------------
 
-dirs="bionic frameworks/av frameworks/base packages/apps/Settings system/core"
+dirs="bionic frameworks/av packages/apps/Settings system/core"
 
 for dir in $dirs ; do
 	cd $rootdirectory
@@ -14,7 +14,9 @@ done
 
 cd $rootdirectory
 cd packages/apps/SetupWizard
+echo "Applying packages/apps/SetupWizard patches..."
 git reset 3593f035fcb00ff88d422e6c7056100ac7a3deb3 --hard
+echo " "
 
 # -----------------------------------
 echo "Changing to build directory..."
