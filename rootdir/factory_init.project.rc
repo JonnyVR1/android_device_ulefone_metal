@@ -46,7 +46,6 @@ on post-fs
 
 on boot
 
-
 #
 # Connectivity related services (Begin)
 #

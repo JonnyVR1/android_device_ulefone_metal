@@ -57,7 +57,7 @@ on post-fs
 
     mknod /dev/stpwmt c 190 0
     mknod /dev/stpgps c 191 0
-    mknod /dev/stpbt c 192 0
+    mknod /dev/stpbt  c 192 0
 
     # BT
     chmod 0660 /dev/stpbt
@@ -190,7 +190,7 @@ on post-fs-data
     chown system system /sys/class/misc/m_batch_misc/batchbatch
     chown system system /sys/class/misc/m_batch_misc/batchflush
 
-	chmod 0660 /sys/class/misc/m_gyro_misc/gyroenablenodata
+    chmod 0660 /sys/class/misc/m_gyro_misc/gyroenablenodata
     chmod 0660 /sys/class/misc/m_gyro_misc/gyroactive
     chmod 0660 /sys/class/misc/m_gyro_misc/gyrodelay
     chmod 0660 /sys/class/misc/m_gyro_misc/gyrobatch
@@ -568,6 +568,7 @@ service agpsd /system/bin/mtk_agpsd
     socket agpsd3 stream 660 gps inet
     user gps
     group gps radio inet sdcard_r sdcard_rw misc
+    setenv LD_SHIM_LIBS "/system/bin/mtk_agpsd|libshim_agps.so"
 
 service wifi2agps /system/bin/wifi2agps
     class main
